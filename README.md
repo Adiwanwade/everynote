@@ -6,34 +6,38 @@
 
 _A sleek, cross-platform note-taking app with offline-first architecture and seamless cloud sync._
 
-  <p>
-    <a href="#installation"><img src="https://img.shields.io/badge/📱%20Download-Now!-brightgreen?style=for-the-badge"></a>
-    <a href="https://github.com/yourusername/everynote/stargazers"><img src="https://img.shields.io/github/stars/yourusername/everynote?style=social"></a>
-  </p>
+<p>
+  <a href="#installation"><img src="https://img.shields.io/badge/📱%20Download-Now!-brightgreen?style=for-the-badge"></a>
+  <a href="https://github.com/yourusername/everynote/stargazers"><img src="https://img.shields.io/github/stars/yourusername/everynote?style=social"></a>
+</p>
 
-  <p>
-    <img src="https://img.shields.io/badge/React%20Native-0.74-61DAFB?style=flat-square&logo=react">
-    <img src="https://img.shields.io/badge/Expo-51.0-000020?style=flat-square&logo=expo">
-    <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
-  </p>
-  <img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&amp;logo=JSON&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&amp;logo=Markdown&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&amp;logo=npm&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="PostCSS" src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&amp;logo=PostCSS&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Prettier" src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat&amp;logo=Prettier&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&amp;logo=JavaScript&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Turbo" src="https://img.shields.io/badge/Turbo-5CD8E5.svg?style=flat&amp;logo=Turbo&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&amp;logo=React&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<br>
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&amp;logo=TypeScript&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="GitHub%20Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&amp;logo=GitHub-Actions&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1.svg?style=flat&amp;logo=Zod&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Expo" src="https://img.shields.io/badge/Expo-000020.svg?style=flat&amp;logo=Expo&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&amp;logo=ESLint&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="React%20Hook%20Form" src="https://img.shields.io/badge/React%20Hook%20Form-EC5990.svg?style=flat&amp;logo=React-Hook-Form&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="YAML" src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&amp;logo=YAML&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-</div>
+<p>
+  <img src="https://img.shields.io/badge/React%20Native-0.74-61DAFB?style=flat-square&logo=react">
+  <img src="https://img.shields.io/badge/Expo-51.0-000020?style=flat-square&logo=expo">
+  <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
+</p>
+
+<p>
+  <img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white">
+  <img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white">
+  <img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white">
+  <img alt="PostCSS" src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&logo=PostCSS&logoColor=white">
+  <img alt="Prettier" src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat&logo=Prettier&logoColor=black">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black">
+  <img alt="Turbo" src="https://img.shields.io/badge/Turbo-5CD8E5.svg?style=flat&logo=Turbo&logoColor=black">
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black">
+</p>
+
+<p>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&logo=GitHub-Actions&logoColor=white">
+  <img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1.svg?style=flat&logo=Zod&logoColor=white">
+  <img alt="Expo" src="https://img.shields.io/badge/Expo-000020.svg?style=flat&logo=Expo&logoColor=white">
+  <img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white">
+  <img alt="React Hook Form" src="https://img.shields.io/badge/React%20Hook%20Form-EC5990.svg?style=flat&logo=React-Hook-Form&logoColor=white">
+  <img alt="YAML" src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&logo=YAML&logoColor=white">
+</p>
 
 [🚀 Features](#features) • [📸 Screenshots](#screenshots) • [🎥 Demo](#demo) • [📖 Docs](#documentation) • [🤝 Contribute](#contributing)
 
@@ -52,7 +56,7 @@ EveryNote is your ultimate note-taking companion, built with **React Native** an
 ## 🎥 See It in Action
 
 <div align="center">
-  <img src="./Untitledvideo-MadewithClipchamp4-ezgif.com-video-to-gif-converter.gif" alt="EveryNote Demo" width="80%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="./Untitledvideo-MadewithClipchamp4-ezgif.com-video-to-gif-converter.gif" alt="EveryNote Demo" width="60%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
   <p><em>Watch EveryNote's smooth UI and powerful features in this demo!</em></p>
 </div>
 
@@ -61,9 +65,21 @@ EveryNote is your ultimate note-taking companion, built with **React Native** an
 ## 📸 App Screenshots
 
 <div align="center">
-  <img src="./Auth.png" alt="EveryNote Screenshots" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-  <img src="./home.png" alt="EveryNote Screenshots" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-  <p><em>Explore EveryNote's pixel-perfect interface in this stunning collage.</em></p>
+  <table>
+    <tr>
+      <td align="center">
+        <img src="./Auth.png" alt="Authentication Screen" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <br>
+        <em>Authentication Screen</em>
+      </td>
+      <td align="center">
+        <img src="./home.png" alt="Home Screen" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <br>
+        <em>Home Screen</em>
+      </td>
+    </tr>
+  </table>
+  <p><em>Explore EveryNote's pixel-perfect interface</em></p>
 </div>
 
 ---
@@ -71,20 +87,17 @@ EveryNote is your ultimate note-taking companion, built with **React Native** an
 ## ✨ Key Features
 
 ### 📝 Note-Taking Powerhouse
-
 - **Rich Text Editing** with 10tap-editor for a delightful writing experience
 - **Smart Organization** with intuitive category selectors
 - **Offline Mode** to capture ideas without an internet connection
 - **Real-Time Sync** across devices via PowerSync
 
 ### 🔐 Secure Authentication
-
 - **Google OAuth** for quick and secure login
 - **Apple Sign-In** support (UI ready, implementation in progress)
 - **Robust Session Management** for a seamless experience
 
 ### 🎨 Stunning User Experience
-
 - **Light Mode Bliss** with a clean, modern design
 - **Cross-Platform** for native iOS and Android performance
 - **Lightning Fast** with optimized code and smooth animations
@@ -222,15 +235,15 @@ flowchart TD
     classDef backend fill:#ffe5b4,stroke:#a64d00,color:#a64d00
     classDef external fill:#e2e3e5,stroke:#6c757d,color:#6c757d
     classDef root fill:#f8d7da,stroke:#842029,color:#842029
-
 ```
+
+</div>
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
 - **React Native** + **Expo SDK** for cross-platform magic
 - **Expo Router** for file-based navigation
 - **TypeScript** for type-safe development
@@ -238,7 +251,6 @@ flowchart TD
 - **React Native Reusables** for consistent UI
 
 ### Backend
-
 - **Next.js 14** with App Router
 - **tRPC** for typesafe APIs
 - **Better-Auth** for secure authentication
@@ -246,7 +258,6 @@ flowchart TD
 - **PostgreSQL** for robust data storage
 
 ### Database & Sync
-
 - **Expo SQLite** for offline storage
 - **PowerSync** for real-time synchronization
 - **PostgreSQL** for cloud backend
@@ -256,7 +267,6 @@ flowchart TD
 ## 🚀 Get Started
 
 ### Prerequisites
-
 - Node.js 18+
 - pnpm (preferred) or npm
 - Expo CLI
@@ -266,26 +276,22 @@ flowchart TD
 ### Installation
 
 1. **Clone the repo**
-
    ```bash
    git clone https://github.com/Adiwanwade/everynote.git
    cd everynote
    ```
 
 2. **Install dependencies**
-
    ```bash
    pnpm install
    ```
 
 3. **Set up environment variables**
-
    ```bash
    cp .env.example .env
    ```
 
    Update `.env` with:
-
    ```env
    DATABASE_URL="postgresql://username:password@localhost:5432/everynote"
    BETTER_AUTH_SECRET="your-auth-secret"
@@ -297,7 +303,6 @@ flowchart TD
    ```
 
 4. **Set up the database**
-
    ```bash
    pnpm db:generate  # Generate migrations
    pnpm db:migrate   # Run migrations
@@ -305,7 +310,6 @@ flowchart TD
    ```
 
 5. **Start development servers**
-
    ```bash
    pnpm dev:nextjs   # Start Next.js backend
    pnpm dev:expo     # Start Expo app (in another terminal)
@@ -320,21 +324,18 @@ flowchart TD
 ## 📱 Feature Highlights
 
 ### Authentication
-
 - ✅ Google OAuth with Better-Auth
 - ✅ Apple Sign-In UI (ready for implementation)
 - ✅ Auto-routing post-login
 - ✅ Secure session handling
 
 ### Notes Interface
-
 - ✅ Rich text editing with 10tap-editor
 - ✅ Category-based organization
 - ✅ Search and calendar UI (ready for enhancement)
 - ✅ Profile section UI
 
 ### Offline-First
-
 - ✅ Local storage with Expo SQLite
 - ✅ PowerSync for seamless sync
 - ✅ Automatic conflict resolution
@@ -345,7 +346,6 @@ flowchart TD
 ## 🎨 UI Design
 
 EveryNote shines with:
-
 - **Pixel-Perfect Light Mode** for a clean aesthetic
 - **Consistent Typography** and spacing
 - **Smooth Animations** for a premium feel
@@ -357,7 +357,6 @@ EveryNote shines with:
 ## 🔧 Configuration
 
 ### PowerSync
-
 1. Sign up at [powersync.com](https://powersync.com)
 2. Create a PowerSync instance
 3. Connect your PostgreSQL database
@@ -365,7 +364,6 @@ EveryNote shines with:
 5. Add credentials to `.env`
 
 ### Google OAuth
-
 1. Visit [Google Cloud Console](https://console.cloud.google.com)
 2. Enable Google Sign-In API
 3. Create OAuth 2.0 credentials
@@ -375,7 +373,7 @@ EveryNote shines with:
 
 ## 📚 Scripts
 
-````bash
+```bash
 # Development
 pnpm dev              # Start both Expo & Next.js
 pnpm dev:expo        # Start Expo only
@@ -387,9 +385,6 @@ pnpm db:migrate      # Run migrations
 pnpm db:studio       # Open Drizzle Studio
 pnpm db:seed         # Seed sample data
 
-# Build & Test Commands
-
-```bash
 # Build Commands
 pnpm build            # Build all packages
 pnpm build:expo      # Build Expo app
@@ -399,7 +394,7 @@ pnpm build:nextjs    # Build Next.js app
 pnpm test           # Run all tests
 pnpm test:expo      # Run Expo tests
 pnpm test:nextjs    # Run Next.js tests
-````
+```
 
 ---
 
@@ -415,7 +410,6 @@ pnpm test:nextjs    # Run Next.js tests
 ## 📦 Deployment
 
 ### Mobile App
-
 ```bash
 npm install -g @expo/eas-cli
 eas build --profile development  # Dev build
@@ -425,9 +419,7 @@ eas submit --platform android   # Submit to Play Store
 ```
 
 ### Backend
-
 Deploy Next.js to:
-
 - Vercel (recommended)
 - Netlify
 - Railway
@@ -438,7 +430,6 @@ Deploy Next.js to:
 ## 🤝 Contributing
 
 We ❤️ contributions! Check our [Contributing Guidelines](./CONTRIBUTING.md) for:
-
 - Code style
 - Testing standards
 - Pull request process
@@ -511,7 +502,6 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## 🙏 Acknowledgments
 
 Big thanks to:
-
 - [Create T3 Turbo](https://github.com/Bekacru/create-t3-turbo)
 - [10tap-editor](https://github.com/10play/10tap-editor)
 - [React Native Reusables](https://github.com/mrzachnugent/react-native-reusables)
