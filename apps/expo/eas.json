@@ -1,6 +1,7 @@
 {
   "cli": {
-    "version": ">= 4.1.2"
+    "version": ">= 4.1.2",
+    "appVersionSource": "local"
   },
   "build": {
     "base": {
@@ -13,7 +14,14 @@
     "development": {
       "extends": "base",
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "NPM_CONFIG_FUND": "false",
+        "NPM_CONFIG_AUDIT": "false"
+      },
+      "cache": {
+        "disabled": true
+      }
     },
     "preview": {
       "extends": "base",

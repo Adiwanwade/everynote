@@ -1,238 +1,530 @@
-# create-t3-turbo
+<div align="center">
 
-This is a fork of `create-t3-app` modified to use [Better Auth](https://better-auth.com) instead of NextAuth.
+# EveryNote 📝
 
-Better Auth is a framework-agnostic authentication and authorization library for TypeScript. It offers a comprehensive set of built-in features and a plugin ecosystem.
+### Capture Your Thoughts, Your Way.
 
-**Advantages of Better Auth:**
-- Native Expo support without any extra setup (including OAuth)
-- Preview deployments without the need for a separate proxy server
-- A lot more features available out of the box and through plugins
+_A sleek, cross-platform note-taking app with offline-first architecture and seamless cloud sync._
 
-## Installation
+  <p>
+    <a href="#installation"><img src="https://img.shields.io/badge/📱%20Download-Now!-brightgreen?style=for-the-badge"></a>
+    <a href="https://github.com/yourusername/everynote/stargazers"><img src="https://img.shields.io/github/stars/yourusername/everynote?style=social"></a>
+  </p>
 
-> [!NOTE]
->
-> Make sure to follow the system requirements specified in [`package.json#engines`](./package.json#L4) before proceeding.
+  <p>
+    <img src="https://img.shields.io/badge/React%20Native-0.74-61DAFB?style=flat-square&logo=react">
+    <img src="https://img.shields.io/badge/Expo-51.0-000020?style=flat-square&logo=expo">
+    <img src="https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square">
+  </p>
+  <img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&amp;logo=JSON&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&amp;logo=Markdown&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&amp;logo=npm&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="PostCSS" src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&amp;logo=PostCSS&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Prettier" src="https://img.shields.io/badge/Prettier-F7B93E.svg?style=flat&amp;logo=Prettier&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&amp;logo=JavaScript&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Turbo" src="https://img.shields.io/badge/Turbo-5CD8E5.svg?style=flat&amp;logo=Turbo&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&amp;logo=React&amp;logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
+<br>
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&amp;logo=TypeScript&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="GitHub%20Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&amp;logo=GitHub-Actions&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Zod" src="https://img.shields.io/badge/Zod-3E67B1.svg?style=flat&amp;logo=Zod&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="Expo" src="https://img.shields.io/badge/Expo-000020.svg?style=flat&amp;logo=Expo&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="ESLint" src="https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&amp;logo=ESLint&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="React%20Hook%20Form" src="https://img.shields.io/badge/React%20Hook%20Form-EC5990.svg?style=flat&amp;logo=React-Hook-Form&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="YAML" src="https://img.shields.io/badge/YAML-CB171E.svg?style=flat&amp;logo=YAML&amp;logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+</div>
 
-## About
+[🚀 Features](#features) • [📸 Screenshots](#screenshots) • [🎥 Demo](#demo) • [📖 Docs](#documentation) • [🤝 Contribute](#contributing)
 
-Ever wondered how to migrate your T3 application into a monorepo? Stop right here! This is the perfect starter repo to get you running with the perfect stack!
+</div>
 
-It uses [Turborepo](https://turborepo.org) and contains:
+---
 
-```text
-.github
-  └─ workflows
-        └─ CI with pnpm cache setup
-.vscode
-  └─ Recommended extensions and settings for VSCode users
-apps
-  ├─ expo
-  |   ├─ Expo SDK 51
-  |   ├─ React Native using React 18
-  |   ├─ Navigation using Expo Router
-  |   ├─ Tailwind using NativeWind
-  |   └─ Typesafe API calls using tRPC
-  └─ next.js
-      ├─ Next.js 14
-      ├─ React 18
-      ├─ Tailwind CSS
-      └─ E2E Typesafe API Server & Client
-packages
-  ├─ api
-  |   └─ tRPC v11 router definition
-  ├─ auth
-  |   └─ Authentication using Better Auth.
-  ├─ db
-  |   └─ Typesafe db calls using Drizzle & Supabase
-  └─ ui
-      └─ Start of a UI package for the webapp using shadcn-ui
-tooling
-  ├─ eslint
-  |   └─ shared, fine-grained, eslint presets
-  ├─ prettier
-  |   └─ shared prettier configuration
-  ├─ tailwind
-  |   └─ shared tailwind configuration
-  └─ typescript
-      └─ shared tsconfig you can extend from
+## 🌟 What is EveryNote?
+
+EveryNote is your ultimate note-taking companion, built with **React Native** and **Expo** for a buttery-smooth experience on iOS and Android. With an **offline-first** design, it lets you jot down ideas anytime, anywhere, and syncs them effortlessly when you're back online. Whether you're a student, professional, or creative, EveryNote makes organizing your thoughts a breeze.
+
+> ✨ **Beautiful. Fast. Secure.** Ready to elevate your note-taking game?
+
+---
+
+## 🎥 See It in Action
+
+<div align="center">
+  <img src="./Untitledvideo-MadewithClipchamp4-ezgif.com-video-to-gif-converter.gif" alt="EveryNote Demo" width="80%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <p><em>Watch EveryNote's smooth UI and powerful features in this demo!</em></p>
+</div>
+
+---
+
+## 📸 App Screenshots
+
+<div align="center">
+  <img src="./Auth.png" alt="EveryNote Screenshots" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <img src="./home.png" alt="EveryNote Screenshots" width="90%" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <p><em>Explore EveryNote's pixel-perfect interface in this stunning collage.</em></p>
+</div>
+
+---
+
+## ✨ Key Features
+
+### 📝 Note-Taking Powerhouse
+
+- **Rich Text Editing** with 10tap-editor for a delightful writing experience
+- **Smart Organization** with intuitive category selectors
+- **Offline Mode** to capture ideas without an internet connection
+- **Real-Time Sync** across devices via PowerSync
+
+### 🔐 Secure Authentication
+
+- **Google OAuth** for quick and secure login
+- **Apple Sign-In** support (UI ready, implementation in progress)
+- **Robust Session Management** for a seamless experience
+
+### 🎨 Stunning User Experience
+
+- **Light Mode Bliss** with a clean, modern design
+- **Cross-Platform** for native iOS and Android performance
+- **Lightning Fast** with optimized code and smooth animations
+- **Intuitive UI** following platform design guidelines
+
+---
+
+## 🏗️ Modern Architecture
+
+EveryNote is built with a **Turborepo** monorepo for scalability and maintainability:
+
+```
+everynote/
+├── apps/
+│   ├── expo/                 # React Native mobile app
+│   │   ├── app/             # Expo Router for navigation
+│   │   ├── components/      # Reusable UI components
+│   │   ├── lib/             # Utilities & configs
+│   │   └── assets/          # Images, fonts, icons
+│   └── nextjs/              # Next.js backend API
+│       ├── app/             # Next.js app router
+│       ├── lib/             # Server utilities
+│       └── server/          # tRPC API routes
+├── packages/
+│   ├── api/                 # Shared tRPC API definitions
+│   ├── auth/                # Better-Auth configuration
+│   ├── db/                  # Drizzle ORM schema & migrations
+│   └── ui/                  # Shared UI components
+└── tooling/
+    ├── eslint/              # ESLint configs
+    ├── prettier/            # Prettier configs
+    └── typescript/          # TypeScript configs
 ```
 
-> In this template, we use `@acme` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name. You can use find-and-replace to change all the instances of `@acme` to something like `@my-company` or `@project-name`.
+---
 
-## Quick Start
+## 🏗️ Architecture Diagram
 
-> **Note**
-> The [db](./packages/db) package is preconfigured to use Supabase and is **edge-bound** with the [Vercel Postgres](https://github.com/vercel/storage/tree/main/packages/postgres) driver. If you're using something else, make the necessary modifications to the [schema](./packages/db/src/schema) as well as the [client](./packages/db/src/index.ts) and the [drizzle config](./packages/db/drizzle.config.ts). If you want to switch to non-edge database driver, remove `export const runtime = "edge";` [from all pages and api routes](https://github.com/t3-oss/create-t3-turbo/issues/634#issuecomment-1730240214).
+<div align="center">
 
-To get it running, follow the steps below:
+```mermaid
+flowchart TD
+    subgraph "Monorepo Root"
+        Root["Turborepo + pnpm"]:::root
+    end
 
-### 1. Setup dependencies
+    %% Frontend Apps
+    subgraph "Web Application"
+        direction TB
+        NextApp["Next.js Web App"]:::frontend
+        NextUI["UI Layer (React/Tailwind)"]:::frontend
+        NextAPIClient["tRPC Client"]:::frontend
+        NextApp --> NextUI
+        NextApp --> NextAPIClient
+    end
+
+    subgraph "Mobile Application"
+        direction TB
+        ExpoApp["Expo Mobile App"]:::frontend
+        ExpoUI["UI Layer (NativeWind)"]:::frontend
+        ExpoAPIClient["tRPC Client"]:::frontend
+        ExpoApp --> ExpoUI
+        ExpoApp --> ExpoAPIClient
+    end
+
+    %% Backend
+    subgraph "Backend: Next.js API Server"
+        direction TB
+        APIIndex["packages/api/src/index.ts"]:::backend
+        TRPCSetup["packages/api/src/trpc.ts"]:::backend
+        APIRoot["packages/api/src/root.ts"]:::backend
+        APIRouter["tRPC Router\n(packages/api/src/router/)"]:::backend
+        APIIndex --> TRPCSetup
+        TRPCSetup --> APIRoot
+        APIRoot --> APIRouter
+    end
+
+    %% Shared Packages
+    subgraph "Shared Packages"
+        direction TB
+        AuthPkg["packages/auth (Auth Services)"]:::package
+        DBPkg["packages/db (Drizzle ORM)"]:::package
+        Validators["packages/validators"]:::package
+        UIPkg["packages/ui (Shadcn UI)"]:::package
+    end
+
+    %% External Services
+    subgraph "External Services"
+        direction TB
+        Supabase["Supabase / Postgres"]:::external
+        Vercel["Vercel"]:::external
+        EAS["Expo / EAS"]:::external
+    end
+
+    %% Monorepo Root Connections
+    Root --> NextApp
+    Root --> ExpoApp
+    Root --> APIIndex
+
+    %% Frontend to Backend
+    NextAPIClient -->|"tRPC calls"| APIIndex
+    ExpoAPIClient -.->|"dev types only"| APIRoot
+
+    %% Frontend consumes shared UI
+    UIPkg --> NextUI
+    UIPkg --> ExpoUI
+
+    %% Backend packages interactions
+    APIRouter --> Validators
+    APIRoot --> AuthPkg
+    APIRoot --> DBPkg
+
+    %% Database calls
+    DBPkg --> Supabase
+    %% Hosting
+    NextApp --> Vercel
+    APIIndex --> Vercel
+    ExpoApp --> EAS
+
+    %% Click Events
+    click NextApp "https://github.com/adiwanwade/everynote/tree/main/apps/nextjs/"
+    click ExpoApp "https://github.com/adiwanwade/everynote/tree/main/apps/expo/"
+    click APIRouter "https://github.com/adiwanwade/everynote/tree/main/packages/api/src/router/"
+    click APIIndex "https://github.com/adiwanwade/everynote/blob/main/packages/api/src/index.ts"
+    click TRPCSetup "https://github.com/adiwanwade/everynote/blob/main/packages/api/src/trpc.ts"
+    click APIRoot "https://github.com/adiwanwade/everynote/blob/main/packages/api/src/root.ts"
+    click AuthPkg "https://github.com/adiwanwade/everynote/blob/main/packages/auth/src/auth.ts"
+    click DBPkg "https://github.com/adiwanwade/everynote/blob/main/packages/db/src/client.ts"
+    click Validators "https://github.com/adiwanwade/everynote/blob/main/packages/validators/src/index.ts"
+    click UIPkg "https://github.com/adiwanwade/everynote/blob/main/packages/ui/src/index.ts"
+
+    %% Styles
+    classDef frontend fill:#cfe2ff,stroke:#084298,color:#084298
+    classDef package fill:#d1e7dd,stroke:#0f5132,color:#0f5132
+    classDef backend fill:#ffe5b4,stroke:#a64d00,color:#a64d00
+    classDef external fill:#e2e3e5,stroke:#6c757d,color:#6c757d
+    classDef root fill:#f8d7da,stroke:#842029,color:#842029
+
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **React Native** + **Expo SDK** for cross-platform magic
+- **Expo Router** for file-based navigation
+- **TypeScript** for type-safe development
+- **10tap-editor** for rich text editing
+- **React Native Reusables** for consistent UI
+
+### Backend
+
+- **Next.js 14** with App Router
+- **tRPC** for typesafe APIs
+- **Better-Auth** for secure authentication
+- **Drizzle ORM** for database queries
+- **PostgreSQL** for robust data storage
+
+### Database & Sync
+
+- **Expo SQLite** for offline storage
+- **PowerSync** for real-time synchronization
+- **PostgreSQL** for cloud backend
+
+---
+
+## 🚀 Get Started
+
+### Prerequisites
+
+- Node.js 18+
+- pnpm (preferred) or npm
+- Expo CLI
+- PostgreSQL database
+- PowerSync account (free tier available)
+
+### Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/Adiwanwade/everynote.git
+   cd everynote
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Update `.env` with:
+
+   ```env
+   DATABASE_URL="postgresql://username:password@localhost:5432/everynote"
+   BETTER_AUTH_SECRET="your-auth-secret"
+   GOOGLE_CLIENT_ID="your-google-client-id"
+   GOOGLE_CLIENT_SECRET="your-google-client-secret"
+   POWERSYNC_URL="your-powersync-instance-url"
+   POWERSYNC_TOKEN="your-powersync-token"
+   EXPO_PUBLIC_API_URL="http://localhost:3000"
+   ```
+
+4. **Set up the database**
+
+   ```bash
+   pnpm db:generate  # Generate migrations
+   pnpm db:migrate   # Run migrations
+   pnpm db:seed      # (Optional) Seed data
+   ```
+
+5. **Start development servers**
+
+   ```bash
+   pnpm dev:nextjs   # Start Next.js backend
+   pnpm dev:expo     # Start Expo app (in another terminal)
+   ```
+
+6. **Run the app**
+   - Scan the QR code with **Expo Go** (iOS/Android)
+   - Or press `i` (iOS simulator), `a` (Android emulator)
+
+---
+
+## 📱 Feature Highlights
+
+### Authentication
+
+- ✅ Google OAuth with Better-Auth
+- ✅ Apple Sign-In UI (ready for implementation)
+- ✅ Auto-routing post-login
+- ✅ Secure session handling
+
+### Notes Interface
+
+- ✅ Rich text editing with 10tap-editor
+- ✅ Category-based organization
+- ✅ Search and calendar UI (ready for enhancement)
+- ✅ Profile section UI
+
+### Offline-First
+
+- ✅ Local storage with Expo SQLite
+- ✅ PowerSync for seamless sync
+- ✅ Automatic conflict resolution
+- ✅ Smooth online/offline transitions
+
+---
+
+## 🎨 UI Design
+
+EveryNote shines with:
+
+- **Pixel-Perfect Light Mode** for a clean aesthetic
+- **Consistent Typography** and spacing
+- **Smooth Animations** for a premium feel
+- **Accessible Colors** and contrast
+- **Responsive Layouts** for all devices
+
+---
+
+## 🔧 Configuration
+
+### PowerSync
+
+1. Sign up at [powersync.com](https://powersync.com)
+2. Create a PowerSync instance
+3. Connect your PostgreSQL database
+4. Set sync rules
+5. Add credentials to `.env`
+
+### Google OAuth
+
+1. Visit [Google Cloud Console](https://console.cloud.google.com)
+2. Enable Google Sign-In API
+3. Create OAuth 2.0 credentials
+4. Update `.env` with client ID and secret
+
+---
+
+## 📚 Scripts
+
+````bash
+# Development
+pnpm dev              # Start both Expo & Next.js
+pnpm dev:expo        # Start Expo only
+pnpm dev:nextjs      # Start Next.js only
+
+# Database
+pnpm db:generate     # Generate migrations
+pnpm db:migrate      # Run migrations
+pnpm db:studio       # Open Drizzle Studio
+pnpm db:seed         # Seed sample data
+
+# Build & Test Commands
 
 ```bash
-# Install dependencies
-pnpm i
+# Build Commands
+pnpm build            # Build all packages
+pnpm build:expo      # Build Expo app
+pnpm build:nextjs    # Build Next.js app
 
-# Configure environment variables
-# There is an `.env.example` in the root directory you can use for reference
-cp .env.example .env
+# Test Commands
+pnpm test           # Run all tests
+pnpm test:expo      # Run Expo tests
+pnpm test:nextjs    # Run Next.js tests
+````
 
-# Push the Drizzle schema to the database
-pnpm db:push
-```
+---
 
-### 2. Configure Expo `dev`-script
+## 🧪 Testing
 
-#### Use iOS Simulator
+- **Unit Tests** with Jest
+- **Integration Tests** for APIs
+- **E2E Tests** for key flows
+- **Component Tests** with React Native Testing Library
 
-1. Make sure you have XCode and XCommand Line Tools installed [as shown on expo docs](https://docs.expo.dev/workflow/ios-simulator).
+---
 
-   > **NOTE:** If you just installed XCode, or if you have updated it, you need to open the simulator manually once. Run `npx expo start` from `apps/expo`, and then enter `I` to launch Expo Go. After the manual launch, you can run `pnpm dev` in the root directory.
+## 📦 Deployment
 
-   ```diff
-   +  "dev": "expo start --ios",
-   ```
-
-2. Run `pnpm dev` at the project root folder.
-
-#### Use Android Emulator
-
-1. Install Android Studio tools [as shown on expo docs](https://docs.expo.dev/workflow/android-studio-emulator).
-
-2. Change the `dev` script at `apps/expo/package.json` to open the Android emulator.
-
-   ```diff
-   +  "dev": "expo start --android",
-   ```
-
-3. Run `pnpm dev` at the project root folder.
-
-### 3. Configuring Better Auth to work with Expo
-
-By default, Better Auth is configured to work in your development environment. However, when you’re ready to deploy your app, you’ll need to configure `trustedOrigins` in the `auth` package. This is a list of origins permitted to make requests to the auth server. Be sure to add your Expo scheme to this list and update it in `auth/src/expo.ts` to match your Expo scheme, which is set to "expo" by default.
-
-### 4a. When it's time to add a new UI component
-
-Run the `ui-add` script to add a new UI component using the interactive `shadcn/ui` CLI:
+### Mobile App
 
 ```bash
-pnpm ui-add
+npm install -g @expo/eas-cli
+eas build --profile development  # Dev build
+eas build --profile production   # Prod build
+eas submit --platform ios       # Submit to App Store
+eas submit --platform android   # Submit to Play Store
 ```
 
-When the component(s) has been installed, you should be good to go and start using it in your app.
+### Backend
 
-### 4b. When it's time to add a new package
+Deploy Next.js to:
 
-To add a new package, simply run `pnpm turbo gen init` in the monorepo root. This will prompt you for a package name as well as if you want to install any dependencies to the new package (of course you can also do this yourself later).
+- Vercel (recommended)
+- Netlify
+- Railway
+- Docker
 
-The generator sets up the `package.json`, `tsconfig.json` and a `index.ts`, as well as configures all the necessary configurations for tooling around your package such as formatting, linting and typechecking. When the package is created, you're ready to go build out the package.
+---
 
-## FAQ
+## 🤝 Contributing
 
-### Does the starter include Solito?
+We ❤️ contributions! Check our [Contributing Guidelines](./CONTRIBUTING.md) for:
 
-No. Solito will not be included in this repo. It is a great tool if you want to share code between your Next.js and Expo app. However, the main purpose of this repo is not the integration between Next.js and Expo — it's the code splitting of your T3 App into a monorepo. The Expo app is just a bonus example of how you can utilize the monorepo with multiple apps but can just as well be any app such as Vite, Electron, etc.
+- Code style
+- Testing standards
+- Pull request process
+- Issue reporting
 
-Integrating Solito into this repo isn't hard, and there are a few [official templates](https://github.com/nandorojo/solito/tree/master/example-monorepos) by the creators of Solito that you can use as a reference.
+---
 
-### Does this pattern leak backend code to my client applications?
+## 🔍 Code Quality
 
-No, it does not. The `api` package should only be a production dependency in the Next.js application where it's served. The Expo app, and all other apps you may add in the future, should only add the `api` package as a dev dependency. This lets you have full typesafety in your client applications, while keeping your backend code safe.
+- **TypeScript** for type safety
+- **ESLint** + **Prettier** for clean code
+- **Husky** for pre-commit checks
+- **Turborepo** for optimized builds
 
-If you need to share runtime code between the client and server, such as input validation schemas, you can create a separate `shared` package for this and import it on both sides.
+---
 
-## Deployment
+## 📊 Performance
 
-### Next.js
+- Lazy-loaded components
+- Optimized database queries
+- Minimal bundle sizes
+- Image caching
+- Background sync
 
-#### Prerequisites
+---
 
-> **Note**
-> Please note that the Next.js application with tRPC must be deployed in order for the Expo app to communicate with the server in a production environment.
+## 🛡️ Security
 
-#### Deploy to Vercel
+- Secure auth with Better-Auth
+- SQL injection prevention
+- Input sanitization
+- Protected APIs
+- Safe environment variables
 
-Let's deploy the Next.js application to [Vercel](https://vercel.com). If you've never deployed a Turborepo app there, don't worry, the steps are quite straightforward. You can also read the [official Turborepo guide](https://vercel.com/docs/concepts/monorepos/turborepo) on deploying to Vercel.
+---
 
-1. Create a new project on Vercel, select the `apps/nextjs` folder as the root directory. Vercel's zero-config system should handle all configurations for you.
+## 📱 Platform Support
 
-2. Add your `DATABASE_URL` environment variable.
+- **iOS**: iPhone/iPad (iOS 13+)
+- **Android**: 8.0+ (API 26+)
+- **Web**: Progressive Web App (PWA)
 
-3. Done! Your app should successfully deploy. Assign your domain and use that instead of `localhost` for the `url` in the Expo app so that your Expo app can communicate with your backend when you are not in development.
+---
 
-### Auth Proxy
+## 🎯 Roadmap
 
-Better Auth comes with an Auth Proxy that you can use to authenticate with OAuth providers in preview deployments. You don't need to deploy a septate server for this.
+- [ ] Voice notes & transcription
+- [ ] Collaborative editing
+- [ ] Advanced search with tags
+- [ ] Export formats (PDF, Markdown)
+- [ ] Themes & customization
+- [ ] Widgets
 
-### Expo
+---
 
-Deploying your Expo application works slightly differently compared to Next.js on the web. Instead of "deploying" your app online, you need to submit production builds of your app to app stores, like [Apple App Store](https://www.apple.com/app-store) and [Google Play](https://play.google.com/store/apps). You can read the full [guide to distributing your app](https://docs.expo.dev/distribution/introduction), including best practices, in the Expo docs.
+## 📞 Support
 
-1. Make sure to modify the `getBaseUrl` function to point to your backend's production URL:
+- **Issues**: [GitHub Issues](https://github.com/Adiwanwade/everynote/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Adiwanwade/everynote/discussions)
+- **Email**: Adiwanwade@gmail.com
 
-   <https://github.com/t3-oss/create-t3-turbo/blob/656965aff7db271e5e080242c4a3ce4dad5d25f8/apps/expo/src/utils/api.tsx#L20-L37>
+---
 
-2. Let's start by setting up [EAS Build](https://docs.expo.dev/build/introduction), which is short for Expo Application Services. The build service helps you create builds of your app, without requiring a full native development setup. The commands below are a summary of [Creating your first build](https://docs.expo.dev/build/setup).
+## 📄 License
 
-   ```bash
-   # Install the EAS CLI
-   pnpm add -g eas-cli
+MIT License - see [LICENSE](LICENSE) for details.
 
-   # Log in with your Expo account
-   eas login
+---
 
-   # Configure your Expo app
-   cd apps/expo
-   eas build:configure
-   ```
+## 🙏 Acknowledgments
 
-3. After the initial setup, you can create your first build. You can build for Android and iOS platforms and use different [`eas.json` build profiles](https://docs.expo.dev/build-reference/eas-json) to create production builds or development, or test builds. Let's make a production build for iOS.
+Big thanks to:
 
-   ```bash
-   eas build --platform ios --profile production
-   ```
+- [Create T3 Turbo](https://github.com/Bekacru/create-t3-turbo)
+- [10tap-editor](https://github.com/10play/10tap-editor)
+- [React Native Reusables](https://github.com/mrzachnugent/react-native-reusables)
+- [PowerSync](https://powersync.com)
+- [Better-Auth](https://better-auth.com)
 
-   > If you don't specify the `--profile` flag, EAS uses the `production` profile by default.
+---
 
-4. Now that you have your first production build, you can submit this to the stores. [EAS Submit](https://docs.expo.dev/submit/introduction) can help you send the build to the stores.
-
-   ```bash
-   eas submit --platform ios --latest
-   ```
-
-   > You can also combine build and submit in a single command, using `eas build ... --auto-submit`.
-
-5. Before you can get your app in the hands of your users, you'll have to provide additional information to the app stores. This includes screenshots, app information, privacy policies, etc. _While still in preview_, [EAS Metadata](https://docs.expo.dev/eas/metadata) can help you with most of this information.
-
-6. Once everything is approved, your users can finally enjoy your app. Let's say you spotted a small typo; you'll have to create a new build, submit it to the stores, and wait for approval before you can resolve this issue. In these cases, you can use EAS Update to quickly send a small bugfix to your users without going through this long process. Let's start by setting up EAS Update.
-
-   The steps below summarize the [Getting started with EAS Update](https://docs.expo.dev/eas-update/getting-started/#configure-your-project) guide.
-
-   ```bash
-   # Add the `expo-updates` library to your Expo app
-   cd apps/expo
-   pnpm expo install expo-updates
-
-   # Configure EAS Update
-   eas update:configure
-   ```
-
-7. Before we can send out updates to your app, you have to create a new build and submit it to the app stores. For every change that includes native APIs, you have to rebuild the app and submit the update to the app stores. See steps 2 and 3.
-
-8. Now that everything is ready for updates, let's create a new update for `production` builds. With the `--auto` flag, EAS Update uses your current git branch name and commit message for this update. See [How EAS Update works](https://docs.expo.dev/eas-update/how-eas-update-works/#publishing-an-update) for more information.
-
-   ```bash
-   cd apps/expo
-   eas update --auto
-   ```
-
-   > Your OTA (Over The Air) updates must always follow the app store's rules. You can't change your app's primary functionality without getting app store approval. But this is a fast way to update your app for minor changes and bug fixes.
-
-9. Done! Now that you have created your production build, submitted it to the stores, and installed EAS Update, you are ready for anything!
-
-## References
-
-The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
-
-A [blog post](https://jumr.dev/blog/t3-turbo) where I wrote how to migrate a T3 app into this.
+<div align="center">
+  <p><strong>Made with ❤️ by Aditya Wanwade</strong></p>
+  <p>
+    <a href="https://github.com/Adiwanwade/everynote/stargazers">⭐ Star us on GitHub</a> • 
+    <a href="https://twitter.com/Adwanwade">🐦 Follow on Twitter</a> • 
+    <a href="https://adiwanwade-portfolio.vercel.app/">🌐 Visit my website</a>
+  </p>
+</div>

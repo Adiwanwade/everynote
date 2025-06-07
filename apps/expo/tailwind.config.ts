@@ -5,6 +5,10 @@ import nativewind from "nativewind/preset";
 import baseConfig from "@acme/tailwind-config/native";
 
 export default {
-  content: ["./src/**/*.{ts,tsx}"],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./App.{js,jsx,ts,tsx}",
+    "./**/*.{js,jsx,ts,tsx}",
+  ],
   presets: [baseConfig, nativewind],
 } satisfies Config;
